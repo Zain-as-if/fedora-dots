@@ -1,0 +1,54 @@
+// Generated with Fastfetch Config Editor
+{
+  "$schema": "https://raw.githubusercontent.com/fastfetch-cli/fastfetch/refs/heads/dev/doc/json_schema.json",
+  "modules": [
+    {
+      "type": "title"
+    },
+    {
+      "type": "separator"
+    },
+    {
+      "type": "os"
+    },
+    {
+      "type": "uptime"
+    },
+    {
+      "type": "cpu"
+    },
+    {
+      "type": "gpu"
+    },
+    {
+      "type": "memory"
+    },
+    {
+      "type": "disk"
+    },
+    {
+      "type": "battery"
+    },
+    {
+      "type": "datetime"
+    },
+    {
+      "type": "shell"
+    },
+    {
+      "type": "wallpaper"
+    },
+    {
+      "type": "theme"
+    },
+    {
+      "type": "terminaltheme"
+    },
+    {
+      "type": "de"
+    },
+    {
+      "type": "wm"
+    }
+  ]
+}
