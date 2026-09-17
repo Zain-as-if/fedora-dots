@@ -1,0 +1,104 @@
+// # z0mbi3 -  https://github.com/gh0stzk/dotfiles
+
+configuration {
+    modi:                        "drun";
+    show-icons:                  true;
+    drun-display-format:         "{name}";
+    font:                        "JetBrainsMono NF Bold 11";
+    
+    //hover-select:				 true;
+	//me-select-entry:			 "";
+	//me-accept-entry:			 "MousePrimary";
+}
+
+//----- Global Properties -----//
+
+* {
+main-bg: #282828E6;
+main-fg: #fbf1c7;
+select-bg: #d79921;
+select-fg: #282828;
+}
+
+//----- Main Window -----//
+
+window {
+    enabled:                     true;
+    fullscreen:                  false;
+    width:                       100%;
+    transparency:                "real";
+    cursor:                      "default";
+    spacing:                     0px;
+    padding:                     0px;
+    border:                      0px;
+    border-radius:               0px;
+    border-color:                transparent;
+    background-color:            transparent;
+}
+
+//----- Main Box -----//
+
+mainbox {
+    enabled:                     true;
+    children:                    [ "listview" ];
+    background-color:            @main-bg;
+}
+
+//----- Listview -----//
+
+listview {
+    enabled:                     true;
+    columns:                     5;
+    lines:                       1;
+    spacing:                     0px;
+
+    // Height of the actual menu above and below the selection screen
+    padding:                     20px 30px; 
+    cycle:                       true;
+    dynamic:                     false;
+    scrollbar:                   false;
+    layout:                      vertical;
+    fixed-height:                true;
+    fixed-columns:               true;
+    cursor:                      "default";
+    background-color:            transparent;
+    text-color:                  @main-fg;
+}
+
+//----- Elements -----//
+
+element {
+    enabled:                     true;
+    orientation:                 vertical;
+    spacing:                     0px;
+    padding:                     0px;
+    // Controls how curvy the corners of selection square are
+    border-radius:               15px;
+    cursor:                      pointer;
+    background-color:            transparent;
+    text-color:                  @main-fg;
+}
+
+element selected.normal {
+    background-color:            @select-bg;
+    text-color:                  @select-fg;
+}
+
+element-icon {
+    size:                        100%;
+    cursor:                      inherit;
+    border-radius:               0px;
+    background-color:            transparent;
+    text-color:                  inherit;
+    horizontal-align:            0.5;
+    vertical-align:              0.5;
+}
+
+element-text {
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+    padding:                     0px;
+    cursor:                      inherit;
+    background-color:            transparent;
+    text-color:                  inherit;
+}
