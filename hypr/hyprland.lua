@@ -60,6 +60,7 @@ hl.on("hyprland.start", function ()
   hl.exec_cmd("systemctl --user start elephant-service")
   hl.exec_cmd("elephant&")
   hl.exec_cmd("walker --gapplication-service")
+  hl.exec_cmd("/usr/libexec/polkit-mate-authentication-agent-1")
 end)
 
 -------------------------------

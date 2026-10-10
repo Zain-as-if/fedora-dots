@@ -30,7 +30,8 @@
       "type": "battery"
     },
     {
-      "type": "datetime"
+      "type": "datetime",
+      "format": "{hour}:{minute}:{second} - {DD/MM/YYYY}"
     },
     {
       "type": "shell"
