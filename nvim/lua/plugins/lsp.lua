@@ -28,6 +28,7 @@ return {
       vim.lsp.enable( 'clangd' )
       vim.lsp.enable( 'nil_ls' )
       vim.lsp.enable( 'matlab_ls' )
+      vim.lsp.enable( 'arduino_language_server' )
 		end,
 	},
 }
