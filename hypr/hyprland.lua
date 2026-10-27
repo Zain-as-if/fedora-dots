@@ -27,7 +27,7 @@ hl.monitor({
     output   = "",
     mode     = "preferred",
     position = "auto",
-    scale    = "auto",
+    scale    = "1",
 })
 
 
@@ -40,6 +40,7 @@ local terminal    = "ghostty"
 local fileManager = "nautilus"
 local menu        = "walker"
 local browser     = "firefox"
+local steam       = "steam --enable-features=UseOzonePlatform --ozone-platform=wayland"
 
 -------------------
 ---- AUTOSTART ----
@@ -273,6 +274,7 @@ hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + F", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
+hl.bind(mainMod .. " + S", hl.dsp.exec_cmd(steam))
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("~/dots/scripts/wallSwitcher.sh"))
 hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen("maximized", "toggle")) 
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd('grim -g "$(slurp -d)" - | wl-copy'))
